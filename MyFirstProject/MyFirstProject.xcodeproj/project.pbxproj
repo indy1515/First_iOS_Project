@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1823358D1EDD300400917CC1 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823358C1EDD300400917CC1 /* FeedDetailViewController.swift */; };
+		1823358F1EDD649000917CC1 /* SaveFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823358E1EDD649000917CC1 /* SaveFeedViewController.swift */; };
 		18F476581EDBC261007168EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F476571EDBC261007168EB /* AppDelegate.swift */; };
 		18F4765A1EDBC261007168EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F476591EDBC261007168EB /* ViewController.swift */; };
 		18F4765D1EDBC261007168EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F4765B1EDBC261007168EB /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		1823358C1EDD300400917CC1 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		1823358E1EDD649000917CC1 /* SaveFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveFeedViewController.swift; sourceTree = "<group>"; };
 		18F476541EDBC261007168EB /* MyFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F476571EDBC261007168EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F476591EDBC261007168EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				18F476591EDBC261007168EB /* ViewController.swift */,
 				18F4768F1EDBD93C007168EB /* FeedViewController.swift */,
 				1823358C1EDD300400917CC1 /* FeedDetailViewController.swift */,
+				1823358E1EDD649000917CC1 /* SaveFeedViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				18F476951EDC12C6007168EB /* UIColorExtensions.swift in Sources */,
 				18F4765A1EDBC261007168EB /* ViewController.swift in Sources */,
 				18F4768D1EDBC55E007168EB /* FeedTableViewCell.swift in Sources */,
+				1823358F1EDD649000917CC1 /* SaveFeedViewController.swift in Sources */,
 				18F476901EDBD93C007168EB /* FeedViewController.swift in Sources */,
 				18F476581EDBC261007168EB /* AppDelegate.swift in Sources */,
 				18F476601EDBC261007168EB /* MyFirstProject.xcdatamodeld in Sources */,
