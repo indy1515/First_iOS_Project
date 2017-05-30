@@ -50,6 +50,15 @@ class FeedViewController: UIViewController {
         newsArray.append(news2)
     }
     
+    
+    func toFeedDetailViewController(news:News){
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "FeedDetailViewController") as? FeedDetailViewController {
+            
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -82,6 +91,13 @@ extension FeedViewController: UITableViewDataSource,UITableViewDelegate{
         var news:News = newsArray[rowNo]
         cell.setupUI(news: news)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rowNo = indexPath.row
+        var news:News = newsArray[rowNo]
+        print(indexPath.row)
+        self.toFeedDetailViewController(news: news)
     }
 }
 

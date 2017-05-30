@@ -20,9 +20,9 @@ class FeedDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.news = News(title: "iOS", description: "Error lets stop doing this", iconImage: #imageLiteral(resourceName: "cheese_flat"), author: "พยุต", view: 2, createDate: "29/06/60")
+//        self.news = News(title: "iOS", description: "Error lets stop doing this", iconImage: #imageLiteral(resourceName: "cheese_flat"), author: "พยุต", view: 2, createDate: "29/06/60")
         // Do any additional setup after loading the view.
-        setupUI()
+        self.setupUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +37,14 @@ class FeedDetailViewController: UIViewController {
 
     
     func setupUI(){
+        if let news = self.news{
+            self.headerImgView.image = news.iconImage
+            self.titleLabel.text = news.title
+            self.detailTextView.text = news.description
+            self.accessoryLabel.text = "\(news.author) • \(news.view) views • \(news.createDate)"
+        }
+        
+        
         
     }
     
