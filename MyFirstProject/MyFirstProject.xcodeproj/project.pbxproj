@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1823358D1EDD300400917CC1 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823358C1EDD300400917CC1 /* FeedDetailViewController.swift */; };
 		18F476581EDBC261007168EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F476571EDBC261007168EB /* AppDelegate.swift */; };
 		18F4765A1EDBC261007168EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F476591EDBC261007168EB /* ViewController.swift */; };
 		18F4765D1EDBC261007168EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F4765B1EDBC261007168EB /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1823358C1EDD300400917CC1 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
 		18F476541EDBC261007168EB /* MyFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F476571EDBC261007168EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F476591EDBC261007168EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				18F476591EDBC261007168EB /* ViewController.swift */,
 				18F4768F1EDBD93C007168EB /* FeedViewController.swift */,
+				1823358C1EDD300400917CC1 /* FeedDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				18F476901EDBD93C007168EB /* FeedViewController.swift in Sources */,
 				18F476581EDBC261007168EB /* AppDelegate.swift in Sources */,
 				18F476601EDBC261007168EB /* MyFirstProject.xcdatamodeld in Sources */,
+				1823358D1EDD300400917CC1 /* FeedDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +572,7 @@
 				18F476811EDBC261007168EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18F476821EDBC261007168EB /* Build configuration list for PBXNativeTarget "MyFirstProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +581,7 @@
 				18F476841EDBC261007168EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18F476851EDBC261007168EB /* Build configuration list for PBXNativeTarget "MyFirstProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +590,7 @@
 				18F476871EDBC261007168EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
