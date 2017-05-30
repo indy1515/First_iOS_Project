@@ -51,7 +51,7 @@ class SaveFeedViewController: UIViewController {
     
     func toFeedDetailViewController(news:News){
         if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "FeedDetailViewController") as? FeedDetailViewController {
-            
+            viewController.news = news
             self.navigationController?.pushViewController(viewController, animated: true)
             
         }
