@@ -35,6 +35,7 @@ class SaveFeedDetailViewController: UIViewController {
         print("Click Delete Button")
         if let news = self.news{
             persist.delete(news: news)
+            _ = self.navigationController?.popViewController(animated: true)
         }
     }
     

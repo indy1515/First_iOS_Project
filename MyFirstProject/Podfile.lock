@@ -1,0 +1,15 @@
+PODS:
+  - FaveButton (2.0.3)
+  - MarqueeLabel/Swift (3.0.2)
+
+DEPENDENCIES:
+  - FaveButton (~> 2.0.3)
+  - MarqueeLabel/Swift
+
+SPEC CHECKSUMS:
+  FaveButton: cfcbc5e73da159c4f916613da5687357b5bb4783
+  MarqueeLabel: 365d4a7cd5a9504e51a2034d2be83782424223ac
+
+PODFILE CHECKSUM: 06466fd2231cd2ff56e6431ffa956a09340fbaec
+
+COCOAPODS: 1.2.1
