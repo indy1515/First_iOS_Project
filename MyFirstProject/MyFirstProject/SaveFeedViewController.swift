@@ -50,8 +50,8 @@ class SaveFeedViewController: UIViewController {
     }
     
     
-    func toFeedDetailViewController(news:News){
-        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "FeedDetailViewController") as? FeedDetailViewController {
+    func toSaveFeedDetailViewController(news:News){
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "SaveFeedDetailViewController") as? SaveFeedDetailViewController {
             viewController.news = news
             self.navigationController?.pushViewController(viewController, animated: true)
             
@@ -96,7 +96,7 @@ extension SaveFeedViewController: UITableViewDataSource,UITableViewDelegate{
         let rowNo = indexPath.row
         var news:News = newsArray[rowNo]
         print(indexPath.row)
-        self.toFeedDetailViewController(news: news)
+        self.toSaveFeedDetailViewController(news: news)
     }
 }
 
