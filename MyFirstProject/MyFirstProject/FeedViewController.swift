@@ -39,8 +39,8 @@ class FeedViewController: UIViewController {
      สร้างข้อมูลทดสอบใน TableView
      */
     func setupTableViewDummyData(){
-        let news:News = News(title: "iOS", description: "Error lets stop doing this", iconImage: #imageLiteral(resourceName: "cheese_flat"), author: "พยุต", view: 2, createDate: "29/06/60")
-        var news2:News = News(title: "Android", description: "5555555555+", iconImage: #imageLiteral(resourceName: "cat"), author: "แจ็ค", view: 999999999, createDate: "29/06/60")
+        let news:News = News(id:1,title: "iOS", description: "Error lets stop doing this", iconImage: #imageLiteral(resourceName: "cheese_flat"), author: "พยุต", view: 2, createDate: "29/06/60",category: "Tech")
+        var news2:News = News(id: 2,title: "Android", description: "5555555555+", iconImage: #imageLiteral(resourceName: "cat"), author: "แจ็ค", view: 99999, createDate: "29/06/60",category: "Sport")
         
         newsArray.append(news)
         newsArray.append(news2)

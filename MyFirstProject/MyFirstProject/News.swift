@@ -9,6 +9,7 @@
 import UIKit
 
 class News {
+    var id:Int
     var title:String
     var description:String
     var iconImage:UIImage
@@ -17,7 +18,8 @@ class News {
     var createDate:String
     var category:String
     
-    init(title:String, description:String, iconImage:UIImage, author:String, view:Int, createDate:String, category:String = "Undefined") {
+    init(id:Int,title:String, description:String, iconImage:UIImage, author:String, view:Int, createDate:String, category:String = "Undefined") {
+        self.id = id
         self.title = title
         self.description = description
         self.iconImage = iconImage
