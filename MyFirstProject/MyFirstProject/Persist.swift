@@ -11,7 +11,9 @@ import UIKit
 public let persist: Persist = Persist() //Global Variable
 
 public class Persist {
-    
+    init(){
+        
+    }
     let saveKey = "SaveList"
     
     func save(news: News) {

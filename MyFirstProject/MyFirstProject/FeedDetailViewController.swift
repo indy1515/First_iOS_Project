@@ -32,7 +32,9 @@ class FeedDetailViewController: UIViewController {
     
     @IBAction func onClickSaveButton(_ sender: Any) {
         print("Click Save Button")
-        
+        if let news = self.news{
+            persist.save(news: news)
+        }
     }
 
     
