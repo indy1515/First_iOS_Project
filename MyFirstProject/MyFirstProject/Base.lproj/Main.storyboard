@@ -181,11 +181,35 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ck-V3-sdN">
-                                        <rect key="frame" x="319" y="388.5" width="40" height="34"/>
-                                        <state key="normal" title="Save">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ck-V3-sdN" customClass="FaveButton" customModule="FaveButton">
+                                        <rect key="frame" x="319" y="385.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6Ck-V3-sdN" secondAttribute="height" multiplier="1:1" id="SPa-A5-JAB"/>
+                                            <constraint firstAttribute="width" constant="40" id="kff-hf-RpB"/>
+                                        </constraints>
+                                        <state key="normal" image="heart">
                                             <color key="titleColor" red="0.1333333333" green="0.26274509800000001" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.91153395179999996" green="0.30123531819999999" blue="0.29890951510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dotFirstColor">
+                                                <color key="value" red="1" green="0.92388986790000005" blue="0.29111027389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="dotSecondColor">
+                                                <color key="value" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="circleFromColor">
+                                                <color key="value" red="0.96592881944444442" green="0.40755208333333331" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="circleToColor">
+                                                <color key="value" red="1" green="0.41742590524123524" blue="0.98295914826506092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onClickSaveButton:" destination="MIA-b5-rnR" eventType="touchUpInside" id="NsP-NZ-EUT"/>
                                         </connections>
@@ -223,13 +247,14 @@
                     <connections>
                         <outlet property="accessoryLabel" destination="9du-Xu-xOw" id="MRK-jo-Ecf"/>
                         <outlet property="detailTextView" destination="bnR-ef-9de" id="uhL-ZL-83O"/>
+                        <outlet property="favButton" destination="6Ck-V3-sdN" id="2fL-p1-Kd2"/>
                         <outlet property="headerImgView" destination="swJ-kO-L6O" id="GyR-RH-TX3"/>
                         <outlet property="titleLabel" destination="iZ5-Ms-dFd" id="ZTR-3h-yPR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfU-I2-l4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="270" y="-248"/>
+            <point key="canvasLocation" x="269.60000000000002" y="-248.27586206896552"/>
         </scene>
         <!--Bookmark-->
         <scene sceneID="zfN-mS-M8C">
@@ -382,6 +407,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart" width="128" height="128"/>
         <image name="rocket_icon2" width="266" height="200"/>
     </resources>
 </document>

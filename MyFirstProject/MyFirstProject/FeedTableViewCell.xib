@@ -34,11 +34,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information about Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95d-5z-NWb">
-                                <rect key="frame" x="100" y="46" width="172" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information about Github" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95d-5z-NWb" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="100" y="46" width="214" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollDuration">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailingBuffer">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adison • 299 views • 30/07/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMj-9Y-eYy">
                                 <rect key="frame" x="100" y="69" width="214" height="17"/>
@@ -53,6 +61,7 @@
                             <constraint firstItem="ug9-4k-SJc" firstAttribute="leading" secondItem="Rvq-rW-Cym" secondAttribute="trailing" constant="20" id="7qT-bg-ATf"/>
                             <constraint firstItem="ug9-4k-SJc" firstAttribute="top" secondItem="Rvq-rW-Cym" secondAttribute="top" id="Lap-ea-kmq"/>
                             <constraint firstItem="WMj-9Y-eYy" firstAttribute="leading" secondItem="ug9-4k-SJc" secondAttribute="leading" id="MSP-HI-7I2"/>
+                            <constraint firstAttribute="trailing" secondItem="95d-5z-NWb" secondAttribute="trailing" constant="6" id="gYV-dK-COo"/>
                             <constraint firstItem="Rvq-rW-Cym" firstAttribute="centerY" secondItem="cWl-tm-Ytg" secondAttribute="centerY" id="jQa-gj-9kA"/>
                             <constraint firstItem="Rvq-rW-Cym" firstAttribute="leading" secondItem="cWl-tm-Ytg" secondAttribute="leading" constant="20" id="jsX-uJ-e5V"/>
                             <constraint firstAttribute="trailing" secondItem="WMj-9Y-eYy" secondAttribute="trailing" constant="6" id="nLS-qY-Yxv"/>

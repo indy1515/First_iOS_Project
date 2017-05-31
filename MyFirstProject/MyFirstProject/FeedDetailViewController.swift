@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FaveButton
 
 class FeedDetailViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class FeedDetailViewController: UIViewController {
     @IBOutlet weak var accessoryLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var headerImgView: UIImageView!
+ 
+    @IBOutlet var favButton: FaveButton!
     
     var news:News?
     
@@ -25,6 +28,10 @@ class FeedDetailViewController: UIViewController {
         self.setupUI()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setupUI()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,6 +42,7 @@ class FeedDetailViewController: UIViewController {
         if let news = self.news{
             persist.save(news: news)
         }
+        self.setupUI()
     }
 
     
@@ -44,6 +52,10 @@ class FeedDetailViewController: UIViewController {
             self.titleLabel.text = news.title
             self.detailTextView.text = news.description
             self.accessoryLabel.text = "\(news.author) • \(news.view) views • \(news.createDate)"
+            let isBookmarked:Bool = persist.exist(news: news)
+            self.favButton.isSelected = isBookmarked
+            self.favButton.isUserInteractionEnabled = !isBookmarked
+            
         }
         
         
