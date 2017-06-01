@@ -34,8 +34,16 @@ class SaveFeedDetailViewController: UIViewController {
     @IBAction func onClickDeleteButton(_ sender: Any) {
         print("Click Delete Button")
         if let news = self.news{
-            persist.delete(news: news)
-            _ = self.navigationController?.popViewController(animated: true)
+            persist.alert(title: "Delete?", baseView: self, callback: { isOk in
+                if isOk{
+                    persist.delete(news: news)
+                    _ = self.navigationController?.popViewController(animated: true)  
+                }else{
+                    
+                }
+                
+            })
+            
         }
     }
     

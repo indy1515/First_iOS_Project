@@ -6,6 +6,7 @@
 //  Copyright © 2560 IndyZaLab. All rights reserved.
 //
 
+import SDWebImage
 import UIKit
 
 class FeedTableViewCell: UITableViewCell {
@@ -26,7 +27,8 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     func setupUI(news:News){
-        self.iconImgView.image = news.iconImage
+        self.iconImgView.sd_setImage(with: URL(string: news.imageUrl))
+//        self.iconImgView.image = news.iconImage
         self.titleLabel.text = news.title
         self.descriptionLabel.text = news.description
         self.accessoryLabel.text = "\(news.author) • \(news.view) views • \(news.createDate)"
