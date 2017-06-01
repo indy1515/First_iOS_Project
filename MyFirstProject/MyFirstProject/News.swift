@@ -20,7 +20,12 @@ class News:Mappable {
     var createDate:String = ""
     var updateDate:String = ""
     var category:String = ""
+    var newsDetail:NewsDetail?
     
+    
+    init(){
+        
+    }
     init(id:Int,title:String, description:String, iconImage:UIImage, author:String, view:Int, createDate:String, category:String = "Undefined") {
         self.id = id
         self.title = title
@@ -37,15 +42,15 @@ class News:Mappable {
     }
     
     func mapping(map: Map) {
-        self.id <- map["id"]
-        self.title <- map["title"]
-        self.description <- map["description"]
-        self.imageUrl <- map["image_url"]
-        self.author <- map["author"]
-        self.view <- map["total_view"]
-        self.createDate <- map["created_at"]
-        self.updateDate <- map["updated_at"]
-        self.category <- map["category"]
+        self.id             <- map["id"]
+        self.title          <- map["title"]
+        self.description    <- map["description"]
+        self.imageUrl       <- map["image_url"]
+        self.author         <- map["author"]
+        self.view           <- map["total_view"]
+        self.createDate     <- map["created_at"]
+        self.updateDate     <- map["updated_at"]
+        self.category       <- map["category"]
     }
 
     

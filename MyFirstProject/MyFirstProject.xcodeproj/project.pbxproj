@@ -13,6 +13,9 @@
 		182335931EDE5C8500917CC1 /* Persist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182335921EDE5C8500917CC1 /* Persist.swift */; };
 		182335951EDE831800917CC1 /* SaveFeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182335941EDE831800917CC1 /* SaveFeedDetailViewController.swift */; };
 		182335971EDEA0C600917CC1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 182335961EDEA0C600917CC1 /* Podfile */; };
+		188971301EDFC7B200800697 /* NewsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889712F1EDFC7B200800697 /* NewsDetail.swift */; };
+		188971321EDFD2B200800697 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188971311EDFD2B200800697 /* UIColorExtensions.swift */; };
+		188971341EDFD56600800697 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188971331EDFD56600800697 /* Backend.swift */; };
 		18F476581EDBC261007168EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F476571EDBC261007168EB /* AppDelegate.swift */; };
 		18F4765A1EDBC261007168EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F476591EDBC261007168EB /* ViewController.swift */; };
 		18F4765D1EDBC261007168EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F4765B1EDBC261007168EB /* Main.storyboard */; };
@@ -25,7 +28,6 @@
 		18F4768E1EDBC55E007168EB /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F4768C1EDBC55E007168EB /* FeedTableViewCell.xib */; };
 		18F476901EDBD93C007168EB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F4768F1EDBD93C007168EB /* FeedViewController.swift */; };
 		18F476921EDBF515007168EB /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F476911EDBF515007168EB /* News.swift */; };
-		18F476951EDC12C6007168EB /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F476941EDC12C6007168EB /* UIColorExtensions.swift */; };
 		3A8C715CF986EDF87AB7BA1D /* Pods_MyFirstProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2CD6D57C7B8498FAD107105 /* Pods_MyFirstProjectTests.framework */; };
 		67730B3507124593FFCD3DE9 /* Pods_MyFirstProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C351564FACEE3E038B300E3A /* Pods_MyFirstProject.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,9 @@
 		182335921EDE5C8500917CC1 /* Persist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persist.swift; sourceTree = "<group>"; };
 		182335941EDE831800917CC1 /* SaveFeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveFeedDetailViewController.swift; sourceTree = "<group>"; };
 		182335961EDEA0C600917CC1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1889712F1EDFC7B200800697 /* NewsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetail.swift; sourceTree = "<group>"; };
+		188971311EDFD2B200800697 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		188971331EDFD56600800697 /* Backend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 		18F476541EDBC261007168EB /* MyFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F476571EDBC261007168EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F476591EDBC261007168EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +76,6 @@
 		18F4768C1EDBC55E007168EB /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		18F4768F1EDBD93C007168EB /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		18F476911EDBF515007168EB /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
-		18F476941EDC12C6007168EB /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		4F87FE18FA3A66BD29898DE5 /* Pods_MyFirstProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFirstProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4FFBA54633A1E30994859D /* Pods-MyFirstProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstProjectUITests/Pods-MyFirstProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		95ADEC9237FA02F7031F3B76 /* Pods-MyFirstProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstProject/Pods-MyFirstProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				18F476931EDC12B2007168EB /* Color */,
 				18F476911EDBF515007168EB /* News.swift */,
 				182335921EDE5C8500917CC1 /* Persist.swift */,
+				1889712F1EDFC7B200800697 /* NewsDetail.swift */,
+				188971331EDFD56600800697 /* Backend.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -215,7 +221,7 @@
 		18F476931EDC12B2007168EB /* Color */ = {
 			isa = PBXGroup;
 			children = (
-				18F476941EDC12C6007168EB /* UIColorExtensions.swift */,
+				188971311EDFD2B200800697 /* UIColorExtensions.swift */,
 			);
 			name = Color;
 			sourceTree = "<group>";
@@ -519,14 +525,16 @@
 				182335931EDE5C8500917CC1 /* Persist.swift in Sources */,
 				182335951EDE831800917CC1 /* SaveFeedDetailViewController.swift in Sources */,
 				18F476921EDBF515007168EB /* News.swift in Sources */,
-				18F476951EDC12C6007168EB /* UIColorExtensions.swift in Sources */,
+				188971321EDFD2B200800697 /* UIColorExtensions.swift in Sources */,
 				18F4765A1EDBC261007168EB /* ViewController.swift in Sources */,
 				18F4768D1EDBC55E007168EB /* FeedTableViewCell.swift in Sources */,
+				188971341EDFD56600800697 /* Backend.swift in Sources */,
 				1823358F1EDD649000917CC1 /* SaveFeedViewController.swift in Sources */,
 				18F476901EDBD93C007168EB /* FeedViewController.swift in Sources */,
 				18F476581EDBC261007168EB /* AppDelegate.swift in Sources */,
 				18F476601EDBC261007168EB /* MyFirstProject.xcdatamodeld in Sources */,
 				1823358D1EDD300400917CC1 /* FeedDetailViewController.swift in Sources */,
+				188971301EDFC7B200800697 /* NewsDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
